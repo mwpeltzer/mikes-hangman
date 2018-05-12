@@ -3,7 +3,6 @@
 var computerChoices = ["Linkin Park", "Muse", "Sufjan Stevens"];
 
 console.log(computerChoices);
-
 console.log(computerChoices.length);
 
 //  Creating variables to hold the values of variables involved in the game
@@ -12,10 +11,32 @@ var currentAnswer = [];
 var guessesLeft = "";
 var lettersGuessed = "";
 
-// need to create a function that select one of the computerChoices randomnly
-
+// function that select random band from the array
 var computerRandom = computerChoices[Math.floor(Math.random() * computerChoices.length)];
-    console.log('Computer: ', computerRandom);	
+    
+console.log('Computer: ', computerRandom);	
+
+// function for when user presses key
+
+document.onkeyup = function(event) {
+
+	console.log(onkeyup);
+
+	// determine what key was pressed 
+	var userGuess = event.key;
+	console.log(userGuess);
+
+
+
+
+
+
+// end of onkeyup
+}
+
+
+
+
 
 
 
