@@ -3,24 +3,20 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Mike's Hangman Game</title>
-	<script src="assets/javascript/game.js"></script>
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
 <body>
 	
 
-	<div class="div-one" id="event">Rhino's Hangman Game</div>
-
-	<div>Press Any Key To Start!</div>
-		<!-- create 'onkey' event listener -->
-
-
-	<div class="answer">_ _ _ _ _</div>
-
-	<div>Letters Guessed</div>
-
-	<div></div>
+<!-- 1. Have an output for all the letters in the alphabet-->
+		<div id="game">
+			<p>Guess What Letter I'm Thinking Of?</p>
+			<p>Total Wins: </p>
+			<p>Losses: </p>
+			<p>Guesses Left: </p>
+			<p>Your Guesses So Far: </p> 
+		</div>
 
 
 
@@ -29,7 +25,8 @@
 
 
 
-
+<!-- Link to external javascript page -->
+	<script src="assets/javascript/game.js"></script>
 	
 </body>
 </html>

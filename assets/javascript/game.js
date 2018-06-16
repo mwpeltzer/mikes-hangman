@@ -2,6 +2,10 @@
 // answers array stores answers in an array
 var computerChoices = ["Linkin Park", "Muse", "Sufjan Stevens"];
 
+computerChoices.split("");
+console.log(choicesArray);
+
+
 console.log(computerChoices);
 console.log(computerChoices.length);
 
@@ -27,7 +31,28 @@ document.onkeyup = function(event) {
 	console.log(userGuess);
 
 
+	// Displaying tallies in html
 
+			 var html = //"<h1>The Psychic Game</h1>" + 
+        "<p>Guess What Letter I'm Thinking Of?</p>" +
+        "<p>Total Wins: " + 
+        wins + 
+        "</p>" +
+        "<p>Losses: " + 
+        losses + 
+        "</p>" +
+        "<p>Guesses Left: " + 
+        guessesLeft + 
+        "</p>" +
+        "<p>Your Guesses So Far: " +
+        guessesSofar +
+        "</p>";
+		
+		console.log()
+
+
+		// selects id from html
+	document.querySelector('#game').innerHTML = html; 
 
 
 
